@@ -5,7 +5,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-N2NLSW2BPD"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
     gtag('config', 'G-N2NLSW2BPD');
@@ -13,9 +13,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canvas</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, corrupti illum maiores cum minima, iusto voluptatem sit facilis quibusdam corporis quidem, nihil quae. Quo, expedita sapiente atque incidunt facilis molestiae?</span>
+    <div class="card">
+        <ul>
+            <li class="item">
+                <label class="collapsible">
+                    <input type="checkbox" class="toggle" checked>
+                    <span class="symbol material-symbols-outlined symbol-folder-closed">folder</span>
+                    <span class="symbol material-symbols-outlined symbol-folder-open">folder_open</span>
+                    <span>Canvas</span>
+                </label>
+                <div class="tree-children-wrapper">
+                    <ul class="tree-children">
+                        <li class="item">
+                            <label class="collapsible">
+                                <input type="checkbox" class="toggle" checked>
+                                <span class="symbol material-symbols-outlined symbol-folder-closed">folder</span>
+                                <span class="symbol material-symbols-outlined symbol-folder-open">folder_open</span>
+                                <span>assets</span>
+                            </label>
+                            <div class="tree-children-wrapper">
+                                <ul class="tree-children">
+                                    <li class="item">
+                                        <div class="file-item">
+                                            <span class="symbol material-symbols-outlined disabled">palette</span>
+                                            <span class="disabled">style.css</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="file-item">
+                                <span class="symbol material-symbols-outlined">attribution</span>
+                                <a href="Attribution/index.html">Attribution</a>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <label class="collapsible">
+                                <input type="checkbox" class="toggle" checked>
+                                <span class="symbol material-symbols-outlined symbol-folder-closed">folder</span>
+                                <span class="symbol material-symbols-outlined symbol-folder-open">folder_open</span>
+                                <span>Projects</span>
+                            </label>
+                            <div class="tree-children-wrapper">
+                                <ul class="tree-children">
+                                    <li class="item">
+                                        <div class="file-item">
+                                            <span class="symbol material-symbols-outlined">folder_eye</span>
+                                            <a href="#">Project 1</a>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="file-item">
+                                            <span class="symbol material-symbols-outlined">folder_eye</span>
+                                            <a href="#">Project 2</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="file-item">
+                                <span class="symbol material-symbols-outlined">commit</span>
+                                <a href="https://github.com/lkhc1/Canvas">GitHub</a>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="file-item">
+                                <span class="symbol material-symbols-outlined">gavel</span>
+                                <a href="https://github.com/lkhc1/Canvas/blob/main/LICENSE">LICENSE</a>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="file-item">
+                                <span class="symbol material-symbols-outlined">description</span>
+                                <a href="https://github.com/lkhc1/Canvas/blob/main/README.md">README.md</a>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="file-item">
+                                <span class="symbol material-symbols-outlined disabled">code</span>
+                                <span class="disabled">index.html</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
