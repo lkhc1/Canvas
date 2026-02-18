@@ -106,8 +106,7 @@ ul {
 
 .file-item a {
     text-decoration: none;
-    border-bottom: 1px solid #52525b;
-    transition: border-color .2s, color .2s;
+    color: #000;
 }
 
 .file-item a:hover {
