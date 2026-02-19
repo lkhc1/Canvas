@@ -29,7 +29,7 @@ body {
 .back-link {
     display: inline-block;
     margin: 0 0 20px 0;
-    font-size: 0.9rem;
+    font-size: .9rem;
     color: #52525b;
     text-decoration: none;
     transition: color .2s;
@@ -92,4 +92,5 @@ h1 {
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
+
 }
