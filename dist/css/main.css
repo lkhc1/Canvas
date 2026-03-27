@@ -74,7 +74,7 @@ ul li a .label {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: 30%;
+  top: 25%;
 }
 .w-projects a {
   transition: all 0.3s ease;
