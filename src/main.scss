@@ -1,0 +1,101 @@
+@import 'mixins';
+@import 'vars';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // outline: 1px solid rebeccapurple
+}
+
+.center {
+  @include center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body {
+  background-color: $bg;
+}
+
+.w-main {
+  @include center;
+  @include border($w);
+  animation: fadeIn .3s ease-in-out;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  li {
+    margin: 0 map-get($sp, xs);
+    a {
+      @include center;
+      color: $w;
+      text-decoration: none;
+      position: relative;
+      .material-symbols-outlined {
+        @include transition;
+        padding: map-get($sp, sm);
+        &:hover {
+          color: $pc;
+        }
+      }
+      &:hover .label {
+        opacity: 1;
+      }
+      .label {
+        @include transition;
+        @include border($g);
+        position: absolute;
+        top: calc(100% + .35rem);
+        left: 50%;
+        font-size: map-get($fs, sm);
+        padding: map-get($sp, xs);
+        transform: translateX(-50%) translateY(-2px);
+        border-radius: map-get($br, sm);
+        pointer-events: none;
+        opacity: 0;
+      }
+    }
+  }
+}
+
+// projects index.html
+
+.w-projects {
+  ul {
+    flex-direction: column;
+  }
+  li {
+    margin: map-get($sp, md);
+  }
+  li:nth-child(1) {
+    a {
+      text-decoration: none;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 30%;
+    }
+  }
+  a {
+    @include transition;
+    text-decoration: underline;
+    &:hover {
+      color: $pc;
+    }
+  }
+  animation: fadeIn .3s ease-in-out;
+}
+
+//
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

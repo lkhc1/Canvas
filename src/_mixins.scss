@@ -1,0 +1,13 @@
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin transition($prop: all, $time: .3s, $ease: ease) {
+  transition: $prop $time $ease;
+}
+
+@mixin border($color, $width: 1px) {
+  border: $width solid $color;
+}
